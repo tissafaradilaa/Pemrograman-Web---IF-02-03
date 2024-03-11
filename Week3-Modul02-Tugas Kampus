@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Mendifinisikan karakter set sebagai UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Menentukan versi IE yang kompatibel-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- menyesuaikan tampilan halaman-->
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <!-- menyatakan siapa penulis dokumen-->
+    <meta name="author" content="Tissa Faradila">
+    <!-- menyediakan kata kunci yang terkait dengan dokumen-->
+    <meta name="keyword" content="Belajar HTML, Belajar Web">
+    <!--menyediakan deskripsi singkat-->
+    <meta name="description" content="Praktikum Modul 02">
+    <!-- instruksi untuk robot web-->
+    <meta name="robots" content="index, follow">
+    
+    <!--Judul halaman-->
+    <title>Pengenalan HTML Tingkat Lanjut</title>
+</head>
+
+<body>
+    <!--Menebalkan teks untuk judul-->
+    <strong>Praktikum Pemrograman Web</strong>
+    <hr>
+
+    <h1>Pengenalan HTML Tingkat Lanjut</h1>
+    <hr>
+
+    <div>
+        <h2>Element Form</h2>
+        <hr>
+        <!-- Memulai form dengan action kosong dan metode GET-->
+        <Form action="" method="get">
+            <p><label>Nama Lengkap</label><input type="text" name="text-form" size="20"></p>
+            <p><label>Nama Panggilan</label><input type="text" name="text-form" size="20" placeholder=""></p>
+            <p><input type="text" name="readonly_form" value="Readonly"></p>
+            <p><input type="text" name="disabled_form" value="Disabled" size="20"></p>
+            <p><input type="text" name="required_form" size="20" required placeholder="Required"></p>
+
+            <p><label>Email</label><input type="email" name="email_form" size="20" placeholder="Email"></p>
+            <p><label>Password</label><input type="password" name="password_form" size="20" placeholder="Password"></p>
+            <p><input type="file" name="file"></p>
+            <!--menyembunyikan nilai "123456"-->
+            <p><input type="hidden" name="hidden_form" value="123456"></p>
+
+            <p>
+                <textarea name="textarea_form" cols="30" rows="5" placeholder="Textarea"></textarea>
+            </p>
+
+            <p>
+                <!--Membuat dropdown dengan beberapa opsi-->
+                <select name="Pilihan">
+                    <option value=1>Pilihan 1</option>
+                    <option value=2 selected>Pilihan 2</option>
+                    <option value=3>Pilihan 3</option>
+                    <option value=4>Pilihan 4</option>
+                    <option value=5>Pilihan 5</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="radio" name="radio" value="radio1" id="radio1" checked><label for="radio1">Radio 1</label>
+                <input type="radio" name="radio" value="radio2" id="radio2"><label for="radio2">Radio 2</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="checkbox1" value="checkbox1" id="checkbox1"><label for="chechbox1">Checkbox 1</label>
+                <input type="checkbox" name="checkbox2" value="checkbox2" id="checkbox2"><label for="checkbox2">Checkbox 2</label>                
+            </p>
+
+            <p>
+                <!--Menampilkan tombol reset, submit, button-->
+                <input type="reset" value="Reset">
+                <input type="submit" value="Simpan">
+                <input type="button" value="Button" onclick="">
+            </p>
+        </Form>
+    </div>
+
+    <div>
+        <h2>Element Embed</h2>
+        <hr>
+        <!--Menyematkan file PDF-->
+        <!--Menentukan lokasi file PDF yang mau ditampilkan-->
+        <embed src="assets/TugasRE_KelompokAPPL.pdf" width="800" height="1000" type="application/pdf">
+        <!--Menentukan lebar dan tingi area yang ingin ditampilkan untuk file PDF-->
+        <!--Menentukan jenis konten yang mau ditampilkan, contoh PDF-->
+    </div>
+
+    <div>
+        <h2>Element Object</h2>
+        <hr>
+        <!--Element objek digunakan untuk menyisipkan objek ke dalam halaman-->
+        <!--Menentukan lokasi file PDF yang mau ditampilkan-->
+        <object data="assets/TugasRE_KelompokAPPL.pdf" width="800" height="1000" type="application/pdf"></object>
+    </div>
+
+    <div>
+        <!--Iframe digunakan untuk menambahkan konten eksternal ke dalam halaman web-->
+        <h2>Element Iframe</h2>
+        <hr>
+        <!--Width dan Height digunakan untuk menentukan lebar dan tinggi area tampilan frame-->
+        <!--src untuk menentukan sumber konten yang mau ditampilkan -->
+        <!--title adalah judul untuk Iframe-->
+        <!-- Frameboard untuk menghilangkan border atau bingkai di sekitar Iframe-->
+        <!--allow untuk mengizinkan beberapa fitur-->
+        <!-- allow fullscreen untuk mengizinkan konten di tampilkan dalam metode layar penuh-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v8fKPAIVObY" title="Youtube Video Player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <!--Meningkatkan struktur dan makna halaman-->
+        <h2>Element Semantic HTML 5</h2>
+        <hr>
+        <!-- Header adalah bagian kepala atau header halaman-->
+        <header>Ini Header</header>
+        <!-- Main adalah konten utama dari halaman-->
+        <main>Ini Main</main>
+        <!-- Section adalah bagian yang mengelompokkan konten tematik-->
+        <section>Ini Section</section>
+        <!-- aside adalah konten tambahan terkait konten utama-->
+        <aside>Ini Aside</aside>
+        <!--Nav adalah navoigasi halaman-->
+        <nav>Ini Nav</nav>
+        <!--Footer adalah bagian bawah halaman atau footer-->
+        <footer>Ini Footer</footer>
+    </div>
+</body>
+</html>
